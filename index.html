@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://img.icons8.com/color/96/000000/todo-list.png" alt="Logo" class="logo">
+        <h1>📝 Lista de Tareas</h1>
+        <form id="task-form">
+            <input type="text" id="task-name" placeholder="Nombre de la tarea" required>
+            <input type="text" id="task-desc" placeholder="Descripción">
+            <input type="date" id="task-date">
+            <button type="submit" id="add-btn">Agregar / Modificar</button>
+        </form>
+        <input type="text" id="search-input" placeholder="🔍 Buscar por nombre...">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Fecha de entrega</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="task-list"></tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+    <footer>
+        <p>Hecho con por Grupo 2</p>
+    </footer>
+</body>
+</html>
